@@ -8,12 +8,14 @@
 }
 
 .h4-testi {
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .h1-testi {
+  margin-top: 0.5%;
   display: flex;
   justify-content: center;
 }
@@ -26,7 +28,7 @@
   animation: slideUp 2s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-  margin-top: 3%;
+  margin-top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +54,7 @@
   border: #1262ed 3px solid;
   width: 350px;
   transform: translateY(-30px);
+  cursor: pointer;
 }
 
 .testimoni-image {

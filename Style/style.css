@@ -70,21 +70,55 @@ span {
 }
 
 .nav-link {
+  display: flex;
   font-size: 1rem;
   align-items: center;
   margin-right: 20px;
 }
 
 .nav-link a {
+  position: relative;
   color: inherit;
   font-size: inherit;
+  transition: font-size 1s;
   transition: 1s ease-in-out;
 }
 
 .nav-link a:hover {
-  color: dodgerblue;
+  color: #1e90ff;
   font-size: 1.1rem;
 }
+
+/* Efek garis bawah saat hover */
+
+.nav-link a {
+  position: relative;
+  transition: font-size 1s;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  width: 0;
+  height: 3px;
+  background: #1e90ff;
+  transition: width 1s, left 1s;
+}
+
+.nav-link a:hover{
+  font-size: 1.1em;
+  text-shadow: 0 0 1px #1e90ff, 0 0 1px #1e90ff, 0 0 1px #1e90ff;
+  transition: font-size 1s, text-shadow 1s;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
 
 .btn {
   padding: 10px 30px;
@@ -444,89 +478,6 @@ section.feedback {
 #popup:target .popup-content{
   opacity: 1;
   transform: translate(-50% -50%) scale(1);
-}
-
-/* testimoni */
-.h4-testi{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.h1-testi{
-  display: flex;
-  justify-content: center;
-}
-
-.h1-testi h1 {
-  font-size: 35px;
-}
-
-.testimoni-area{
-  animation: slideUp 2s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.testimoni-card {
-  width: 325px;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  border: darkgrey 3px solid;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
-  overflow: hidden;
-  background-color: white;
-  box-shadow: 4px 8px 36px #03030360;
-  transition: 1s;
-}
-
-.testimoni-card:hover {
-  box-shadow: 5px 10px 40px dodgerblue;
-  border: #1262ed 3px solid;
-  width: 350px;
-}
-
-.testimoni-image {
-  width: 100%;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.testimoni-card img {
-  width: 100%;
-  border-radius: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-.testimoni {
-  padding: 10px;
-}
-
-.testimoni h3 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: dodgerblue;
-}
-
-.testimoni p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: black;
-}
-
-.testimoni h5 {
-  font-size: 12px;
-  margin-bottom: 10px;
-  color: lightslategray;
 }
 
 @keyframes popupFadeIn {
