@@ -41,12 +41,12 @@
   display: flex;
   justify-content: center;
   padding: 15px;
-  border: darkgrey 3px solid;
+  border: #D4E4FF 3px solid;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.2);
   overflow: hidden;
   background-color: white;
-  box-shadow: 4px 8px 36px #03030360;
+  box-shadow: 4px 8px 36px #D4E4FF;
   transition: 2s;
 }
 
