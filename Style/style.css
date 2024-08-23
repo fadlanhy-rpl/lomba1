@@ -268,6 +268,7 @@ section.feedback {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -10;
 }
 
 .feedback-area {
@@ -371,7 +372,7 @@ section.feedback {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
