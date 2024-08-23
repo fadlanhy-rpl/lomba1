@@ -282,7 +282,7 @@ section.feedback {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 4px 8px 20px 0px #0304106b;
+  box-shadow: 5px 10px 30px 0px #0304106b;
   transition: 1s;
   animation: appear 5s linear;
   animation-timeline: view();
@@ -290,7 +290,7 @@ section.feedback {
 }
 
 .feedback-area:hover {
-  box-shadow: 5px 10px 30px dodgerblue;
+  box-shadow: 5px 10px 45px dodgerblue;
   transform: translateY(-20px);
 }
 
@@ -325,7 +325,8 @@ section.feedback {
   align-items: center; /* Center items vertically */
   box-sizing: border-box; 
   border-radius: 50px;
-  box-shadow: 4px 8px 20px 0px #0304106b;
+  border: lightslategray 3px solid;
+  
   transition: 1s;
   animation: appear 5s linear;
   animation-timeline: view();
@@ -333,17 +334,21 @@ section.feedback {
 }
 
 .img-promo{
-  margin: 1rem;
+  margin: 0;
 }
 
 .img-promo img{
-  width: 80%; /* Ensure image fills container width */
+  margin-left: 40px;
+  margin-top: 60px;
+  margin-bottom: -90px;
+  width: 90%; /* Ensure image fills container width */
   height: auto; /* Maintain aspect ratio */
 }
 
 .content-promo{
   margin: 3rem;
   padding: 3rem;
+  margin-right: 60px;
 }
 
 .title-promo{
@@ -359,7 +364,8 @@ section.feedback {
 }
 
 .promo-area:hover {
-  box-shadow: 5px 10px 30px dodgerblue;
+  border: #1262ed 3px solid;
+  box-shadow: 5px 10px 40px dodgerblue;
   transform: translateY(-20px);
 }
 
