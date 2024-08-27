@@ -120,7 +120,7 @@ span {
 
 
 
-.btn {
+.signup-popup {
   padding: 10px 30px;
   background-color: #1262ed;
   color: #ffffff;
@@ -130,7 +130,7 @@ span {
   transition: 1s ease-in-out;
 }
 
-.btn:hover {
+.signup-popup:hover {
   transform: translateY(-10px);
   transform: translateX(-2px);
   background-color: #0c0c0c;
@@ -148,7 +148,6 @@ section.container {
 }
 
 .text {
-  
   animation: slideRight 2s ease-in-out;
   margin-left: 14%;
 }
@@ -162,6 +161,14 @@ h4 {
   font-size: 4rem;
   margin-bottom: 30px;
 }
+
+.home-span{
+  background: linear-gradient(to left, #33A3E5, #0E2F96);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .subtitle {
   font-size: 1rem;
   margin-bottom: 30px;
@@ -223,6 +230,7 @@ h4 {
 }
 
 .bagian-bwh{
+  animation: slideRight 2s ease-in;
   width: 100vw;
   height: 100vh;
   display: flex;

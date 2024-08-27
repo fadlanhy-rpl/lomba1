@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Style/image.css">
     <link rel="stylesheet" href="Style/testimoni.css">
     <link rel="stylesheet" href="Style/last.css">
+    <link rel="stylesheet" href="Style/loginpopup.css">
 </head>
 
 <body>
@@ -25,9 +26,39 @@
                 <a href="#">Contact</a>
             </div>
 
-                <button class="btn">Sign Up</button>
+                <button class="signup-popup">Sign Up</button>
         </nav>
     </header>
+
+    <div class="header2">
+    <div class="wrapper">
+        <div class="form-box-login">
+            <h2>Login</h2> 
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="Email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-login"></button>
+                <div class="login-register"><p>Don't have an account?<a href="#" class="register-link">Register</a></p></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="loginpopup.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Header End -->
 
@@ -36,7 +67,7 @@
         <section class="container">
             <div class="text">
                 <h4>SERTIFICATED DOCTOR</h4>
-                <h1 class="title">Search & Find Clinic <br>For Your Surgery</h1>
+                <h1 class="title">Search & Find Clinic <br>For Your <span class="home-span">Surgery</span></h1>
                 <p class="subtitle"> Platform digital terdepan yang menyediakan informasi kesehatan <br> terpercaya dan terkini untuk membantu Anda menjaga kesehatan dan kesejahteraan <br> Kami menyajikan berbagai artikel, panduan, dan tips tentang kesehatan, mulai dari pencegahan penyakit, gaya hidup sehat, hingga perawatan medis.</p>
                 <div class="button-area">
                     <a class="btn-download" href="#">Get Started</a>
@@ -205,7 +236,7 @@
                     </div>
                     <div class="testimoni">
                         <h3>Hidayat</h3>
-                        <h5>Pasien Tipes</h5>
+                        <h5>Pasien terlalu tampan</h5>
                         <p>Saya merasa terbantu sekali dengan adanya AI di website HealthBridge sehingga membantu teraphy saya</p>
                     </div>
                 </div>
