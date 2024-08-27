@@ -7,18 +7,28 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+section.testimoni-sec{
+  margin-top: 20%;
+  position: relative;
+}
 
 .h4-testi {
   margin-top: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideUp 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .h1-testi {
   margin-top: 0.5%;
   display: flex;
   justify-content: center;
+  animation: slideUp 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .h1-testi h1 {
